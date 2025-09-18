@@ -1,0 +1,40 @@
+// Custom styles for the medical app
+.shadow-medical {
+  box-shadow: 0 8px 32px rgba(13, 148, 136, 0.12);
+}
+
+.shadow-medical-lg {
+  box-shadow: 0 12px 40px rgba(13, 148, 136, 0.15);
+}
+
+// Smooth transitions for tab changes
+.tab-content {
+  transition: all 0.3s ease-in-out;
+}
+
+// Custom scrollbar for better UX
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+// Ensure proper layout on mobile
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
