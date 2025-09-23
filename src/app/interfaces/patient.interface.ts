@@ -34,6 +34,36 @@ export interface MedicalStudy {
   diagnosis: string;
   observations?: string;
   status: 'completed' | 'pending' | 'cancelled';
+  studies: string[];
+  refractionData?: RefractionData;
+  priority: 'normal' | 'high' | 'critical';
+}
+
+export interface RefractionData {
+  vd: number;
+  pd: number;
+  measurements: {
+    od: {
+      s: number;
+      c: number;
+      a: number;
+      se: number;
+      h: number;
+      v: number;
+      ave: number;
+      cyl: number;
+    };
+    oi: {
+      s: number;
+      c: number;
+      a: number;
+      se: number;
+      h: number;
+      v: number;
+      ave: number;
+      cyl: number;
+    };
+  };
 }
 
 export interface MaculopathyData {
