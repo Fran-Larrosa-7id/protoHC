@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PatientService } from './services/patient.service';
-import { Patient, MedicalStudy, MaculopathyData, Protocol, Consent, MedicalImage, RefractionData } from './interfaces/patient.interface';
+import { Patient, MedicalStudy, MaculopathyData, Protocol, Consent, MedicalImage, RefractionData, PatientAntecedentes } from './interfaces/patient.interface';
 
 @Component({
   selector: 'app-root',

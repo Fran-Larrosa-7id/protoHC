@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Patient, MedicalStudy, MaculopathyData, Protocol, Consent, MedicalImage, RefractionData } from '../interfaces/patient.interface';
+import { Patient, MedicalStudy, MaculopathyData, Protocol, Consent, MedicalImage, RefractionData, PatientAntecedentes } from '../interfaces/patient.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +30,26 @@ export class PatientService {
     firstVisit: '17-05-1996',
     lastVisit: '02-01-2098',
     totalVisits: 26,
-    notes: 'Paciente regular con seguimiento de maculopatía'
+    notes: 'Paciente regular con seguimiento de maculopatía',
+    antecedentes: {
+      personales: [
+        'HTA medicado',
+        'Toma pirex y eucidron'
+      ],
+      familiares: [
+        'Padre celíaco',
+        'Madre diabética'
+      ],
+      alergias: [
+        'Alérgico Usa corrección desde los 40 años',
+        'Alérgico alérgico a amoxicilina'
+      ],
+      medicacion: [
+        'HTA medicado',
+        'Pirex y eucidron'
+      ],
+      lastUpdate: '03-11-2021'
+    }
   };
 
   // Real medical histories data from the provided images

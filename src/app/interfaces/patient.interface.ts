@@ -22,6 +22,15 @@ export interface Patient {
   lastVisit: string;
   totalVisits: number;
   notes?: string;
+  antecedentes?: PatientAntecedentes;
+}
+
+export interface PatientAntecedentes {
+  personales: string[];
+  familiares: string[];
+  alergias: string[];
+  medicacion: string[];
+  lastUpdate: string;
 }
 
 export interface MedicalStudy {
