@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "ng build --configuration production --base-href \"/protoHc/\""
+    "server": "ng build --configuration production --base-href \"/protoHC/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/protoHC/browser"
   },
   "prettier": {
     "overrides": [
